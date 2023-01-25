@@ -33,7 +33,7 @@
 </td>
 
 <td>
-<img src="https://user-images.githubusercontent.com/97479656/214612607-92ae8e51-801c-4621-a67b-536d618e47a8.png">
+<img src="https://user-images.githubusercontent.com/97479656/214622485-7cf24587-5812-4506-9be8-988e98731671.png">
 </td>
 </tr>
 
@@ -41,3 +41,4 @@
 
 </div>
 
+![comixology_new_releases drawio]()
