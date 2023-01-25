@@ -25,10 +25,15 @@
 <li>Every Tuesday at 9am, a cron job using EventBridge Schedule will call for a Lambda function that is an ETL process created with Python to collect <a href="https://www.amazon.com/kindle-dbs/comics-store/home/" target="_blank">ComiXology's</a>, an Amazon cloud-based digital distribution platform for comics, weekly featured new releases.</li>
 <br>
 <li>The ETL process will start with the extraction of the data using BeautifulSoup.</li>
+<br>
 <li>Once the data has been extracted, there will be a process of cleaning and formatting the data so that it can be loaded into a CSV file</li>
+<br>
 <li>After the cleaning, a CSV file will be created, then the data will be loaded into it (Which will end the ETL process).</li>
+<br>
 <li>With the completion of the ETL process, the recently created CSV file will be stored in AWS S3. This is possible with Boto3, an AWS SDK for Python (This will be the end of the first Lambda function).</li>
+<br>
 <li>The storing of the file will then trigger another Lambda function that was set to be triggered when an object has been created.</li> 
+<br>
 <li>Once triggered, an email will be sent to me confirming that the file has been successfully uploaded and that the Comixology featured new releases has been stored(Ends the second and last Lambda function).</li> 
 </ol>
 </td>
