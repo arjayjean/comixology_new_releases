@@ -39,7 +39,7 @@
 </td>
 
 <td>
-<img height="550px" width="400px"src="https://user-images.githubusercontent.com/97479656/214634385-496ebeb6-ab5b-4c9c-b904-5344ff3aec67.png">
+<img height="650px" width="500px"src="https://user-images.githubusercontent.com/97479656/214634385-496ebeb6-ab5b-4c9c-b904-5344ff3aec67.png">
 </td>
 </tr>
 
