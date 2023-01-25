@@ -22,19 +22,19 @@
 <tr>
 <td width="50%">
 <ol>
-<li>Every Tuesday at 9am, a cron job using EventBridge Schedule will call for a Lambda function that is an ETL process created with Python to collect ComiXology's weekly featured new releases.</li>
+<li>Every Tuesday at 9am, a cron job using <a href="https://aws.amazon.com/eventbridge/scheduler/">Amazon EventBridge Scheduler</a> will call for an <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> function that is an ETL process created with Python to collect ComiXology's weekly featured new releases.</li>
 <br>
-<li>The ETL process will start with the extraction of the data using BeautifulSoup.</li>
+<li>The ETL process will start with the extraction of the data using <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">BeautifulSoup</a>.</li>
 <br>
 <li>Once the data has been extracted, there will be a process of data cleaning and formatting, so that it can be loaded into a CSV file.</li>
 <br>
 <li>After the cleaning, a CSV file will be created, then the data will be loaded into it (Which will end the ETL process).</li>
 <br>
-<li>With the completion of the ETL process, the recently created CSV file will be stored in AWS S3. This is possible with Boto3, an AWS SDK for Python (This will be the end of the first Lambda function).</li>
+<li>With the completion of the ETL process, the recently created CSV file will be stored in <a href="https://aws.amazon.com/s3/">AWS S3</a>. This is possible with <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html">Boto3</a>, an AWS SDK for Python (This will be the end of the first Lambda function).</li>
 <br>
 <li>The storing of the file will then trigger another Lambda function that was set to be triggered when an object has been created in the defined S3 bucket.</li> 
 <br>
-<li>Once triggered, the Python script within the Lambda function will publish a message and send it to my email, that is a subscriber to a Topic I have created in SNS.</li> 
+<li>Once triggered, the Python script within the Lambda function will publish a message and send it to my email, that is a subscriber to a Topic I have created in <a href="https://aws.amazon.com/sns/">SNS</a>.</li> 
 </ol>
 </td>
 
