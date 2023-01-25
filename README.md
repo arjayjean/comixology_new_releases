@@ -20,7 +20,7 @@
 </tr>
 
 <tr>
-<td width="50%" style="font-size: medium">
+<td width="25%">
 <ol>
 <li>Every Tuesday at 9am, a cron job using EventBridge Schedule will call for a Lambda function that is an ETL process created with Python to collect ComiXology's weekly featured new releases.</li>
 <br>
