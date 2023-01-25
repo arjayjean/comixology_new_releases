@@ -20,7 +20,7 @@
 </tr>
 
 <tr>
-<td width="550px">
+<td width="400px">
 <ol>
 <li>Every Tuesday at 9am, a cron job using EventBridge Schedule will call for a Lambda function that is an ETL process created with Python to collect <a href="https://www.amazon.com/kindle-dbs/comics-store/home/" target="_blank">ComiXology's</a>, an Amazon cloud-based digital distribution platform for comics, weekly featured new releases.</li>
 <li>The ETL process will start with the extraction of the data using BeautifulSoup.</li>
