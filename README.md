@@ -7,7 +7,7 @@
 <hr>
 
 ### Purpose:
-* Every week, there are new comicbooks getting release on Amazon's cloud-based digital distribution platform for comics, [ComiXology](https://www.amazon.com/kindle-dbs/comics-store/home/ "Amazon's ComiXology"). As a comicbook enthusiast, I wanted to create an ETL process that is automated using AWS services, extracts the appropriate data, is transformed by Python, loaded itno a CSV file, and would be stored Amazon S3.
+* Every week, there are new comic books getting released on Amazon's cloud-based digital distribution platform for comics, [ComiXology](https://www.amazon.com/kindle-dbs/comics-store/home/ "Amazon's ComiXology"). As a comic book enthusiast, I wanted to create an ETL process that is automated using AWS services, extracts the appropriate data, transformed by Python, and is loaded into a CSV file, that would then be stored in Amazon S3.
 #
 
 <div>
